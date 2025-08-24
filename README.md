@@ -99,7 +99,7 @@
     .\venv\Scripts\activate
     python agent.py dev
     ```
-3.  程序启动后，访问https://cloud.livekit.io/，通过沙箱启动前端网页。
+3.  程序启动后，访问[livekit官网](https://cloud.livekit.io/)，通过沙箱启动前端网页。
 
 ## <caption> 字幕窗口使用说明
 
