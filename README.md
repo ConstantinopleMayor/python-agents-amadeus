@@ -88,7 +88,7 @@
 -   **Tavily**: 提供强大的在线搜索能力。你需要注册 [Tavily AI](https://tavily.com/) 并获取 API Key。
 -   **OpenMemory**: 为智能体提供长期记忆存储。你需要注册 [OpenMemory](https://mem0.ai/openmemory-mcp) 并获取 API Key。
 
-要使用这些功能，请确保在 `.env` 文件中填入了对应的 `TAVILY_API_KEY` 和 `OPENMEMORY_API_KEY`。如果留空，相关功能将不可用，但 Agent 仍可正常运行。
+要使用这些功能，请确保配置有npx和uvx工具，并在`.env` 文件中填入对应的 `TAVILY_API_KEY` 和 `OPENMEMORY_API_KEY`，最后取消agent.py中对MCP服务代码的注释。
 
 ## ▶️ 如何运行
 
