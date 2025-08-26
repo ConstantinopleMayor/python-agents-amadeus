@@ -19,6 +19,7 @@
     - **STT**: SiliconFlow (`FunAudioLLM/SenseVoiceSmall`)
     - **TTS**: SiliconFlow (`FunAudioLLM/CosyVoice2-0.5B`)
     - **翻译**: OpenAI-compatible LLM (可配置)
+    - **MCP**: 按需配置
 
 ## � 安装与配置
 
