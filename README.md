@@ -59,19 +59,19 @@
     LIVEKIT_API_KEY=
     LIVEKIT_API_SECRET=
     
+    # OpenAI API Key (用于 STT/TTS,必需)
+    # 注意：代码中 TTS 和 STT 的 base_url 已硬编码为 siliconflow, 只需提供 siliconflow key
+    # 如果使用其他服务, 请在 agent.py 中修改 base_url
+    OPENAI_API_KEY=
+    
     # Google Gemini API Key (必需)
     GOOGLE_API_KEY=
     
-    # SiliconFlow API Key (用于 STT/TTS, 如果使用该服务则必需)
-    # 注意：代码中 TTS 和 STT 的 base_url 已硬编码为 siliconflow, 只需提供 key
-    # 如果使用其他服务, 请在 agent.py 中修改 base_url
-    SILICONFLOW_API_KEY= 
-    
     # 字幕翻译服务配置 (使用兼容OpenAI的接口)
     SUBTITLE_TRANS_ENABLED=1
-    SUBTITLE_TRANS_MODEL=gpt-4o-mini # 或其他模型, 如 glm-4
-    SUBTITLE_TRANS_API_KEY= # 你的OpenAI Key或其他服务的Key
-    SUBTITLE_TRANS_BASE_URL= # 你的服务API地址, 例如 https://api.openai.com/v1
+    SUBTITLE_TRANS_MODEL=Qwen/Qwen3-30B-A3B-Instruct-2507 # 或其他模型, 如 glm-4-flash
+    SUBTITLE_TRANS_API_KEY= # 你的服务API Key
+    SUBTITLE_TRANS_BASE_URL= # 你的服务API地址, 例如https://api.siliconflow.cn/v1
     
     # MCP (模型上下文协议) 服务配置 (可选)
     # 用于增强 Agent 的能力，如联网搜索和长期记忆
