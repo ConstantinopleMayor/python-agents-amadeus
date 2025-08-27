@@ -70,10 +70,10 @@
     
     # 字幕翻译服务配置 (使用兼容OpenAI的接口)
     SUBTITLE_TRANS_ENABLED=1
-    SUBTITLE_TRANS_MODEL=Qwen/Qwen3-30B-A3B-Instruct-2507 # 或其他模型, 如 glm-4-flash
-    SUBTITLE_TRANS_PROMPT=你是一个深度了解命运石之门的翻译. 记住以下对应关系：命运石之门（Steins;Gate，シュタインズゲート),Amadeus（アマデウス），牧濑红莉栖(まきせくりす)，冈部伦太郎(おかべ りんたろう)，凤凰院凶真(ほうおういん きょうま)，椎名真由理(しいな まゆり)，桥田志(はしだ いたる)，阿万音铃羽(あまね すずは)，比屋定真帆(ひやじょう まほ)，雷斯基宁(レスキネン)。把提供的句子翻译成中文。 Only provide the translation without any explanations or additional text. #LLM的提示词，可按需修改
-    SUBTITLE_TRANS_API_KEY= # 你的服务API Key
-    SUBTITLE_TRANS_BASE_URL= # 你的服务API地址, 例如https://api.siliconflow.cn/v1
+    SUBTITLE_TRANS_MODEL=gemini-2.5-flash-lite #经测试，gemini-2.5-flash-lite的效果比qwen3-30b-a3b要好
+    SUBTITLE_TRANS_PROMPT=你是命运石之门中的Amadeus红莉牺，把你说的日文翻译成中文。只需提供译文，无需任何解释说明。 #LLM的提示词，可按需修改
+    SUBTITLE_TRANS_API_KEY= # 你的谷歌服务API Key
+    SUBTITLE_TRANS_BASE_URL=https://generativelanguage.googleapis.com/v1beta/openai/ #谷歌的openai兼容接口，也可替换成其他openai兼容接口
     
     # MCP (模型上下文协议) 服务配置 (可选)
     # 用于增强 Agent 的能力，如联网搜索和长期记忆
