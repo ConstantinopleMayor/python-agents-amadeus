@@ -355,7 +355,7 @@ class VisionAgent(Agent):
             stt=openai.STT(model="FunAudioLLM/SenseVoiceSmall",base_url="https://api.siliconflow.cn/v1",detect_language=True),
             llm=google.LLM(model="gemini-2.5-flash",vertexai=False),
             # 采样率记得改成44100
-            tts = openai.TTS(model='FunAudioLLM/CosyVoice2-0.5B', voice='speech:amadeus0:mhz2k619sf:tlaokpjfjifrjkccgxob',base_url="https://api.siliconflow.cn/v1"),
+            tts = openai.TTS(model='FunAudioLLM/CosyVoice2-0.5B', voice='speech:amadeus0:mhz2k619sf:kgqrwxadhrfqdsnflpnz',base_url="https://api.siliconflow.cn/v1"),
             vad=silero.VAD.load(),
             # mcp_servers=[
             #     mcp.MCPServerStdio(
@@ -531,3 +531,4 @@ async def entrypoint(ctx: JobContext):
 
 if __name__ == "__main__":
     cli.run_app(WorkerOptions(entrypoint_fnc=entrypoint))
+
